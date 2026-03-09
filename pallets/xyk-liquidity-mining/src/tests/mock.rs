@@ -163,6 +163,7 @@ thread_local! {
 	pub static DEPOSIT_ID: RefCell<DepositId> = const { RefCell::new(0) };
 
 	pub static DUSTER_WHITELIST: RefCell<Vec<AccountId>>= const { RefCell::new(Vec::new()) };
+	pub static ORACLE_LAG_MOCK: RefCell<bool> = RefCell::new(false);
 }
 #[derive(Copy, Clone)]
 pub struct DymmyGlobalFarm {
